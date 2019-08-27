@@ -200,6 +200,18 @@ nav {
     color: #fff;
 }
 
+#contact-tagline {
+    width: 80%;
+    margin: 1.5% auto;
+    padding: 2%;
+    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 5px;
+}
+
+#contact-heading, #contact-tagline {
+    text-align: center;
+}
+
 #contact-area {
     height: 100vh;
     padding: 5%;
@@ -243,6 +255,11 @@ textarea {
     background-color: #fff;
     color: #000;
     transition: ease 0.75s;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
 }
 
 
