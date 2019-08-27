@@ -250,6 +250,13 @@ textarea {
 
 @media only screen and (max-width: 780px) {
 
+    nav {
+        background-color: aquamarine;
+        padding: 1.5rem;
+        position: sticky;
+        top: 0;
+    }
+
     .single-page-nav {
         display: none;
     }
