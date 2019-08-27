@@ -1,17 +1,3 @@
-//SpyScrolling Effect
-const spyScrolling = ( ) => {
-    const sections = document.querySelectorAll( '.section' );
-  
-    window.onscroll = ( ) => {
-      const scrollPos = document.body.scrollTop + 90; //Hardcoded offset
-      for ( let s in sections )
-        if ( sections.hasOwnProperty( s ) && sections[ s ].getBoundingClientRect().top <= scrollPos ) {
-          const id = sections[ s ].id;
-          document.querySelector( '.active' ).classList.remove( 'active' );
-          document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
-        }
-    }  
-  }
 
 //SmoothScrolling Animation
   function smoothScroll(target, duration) {
@@ -70,13 +56,11 @@ const spyScrolling = ( ) => {
 let mobileButton = document.querySelector('.mobile-button');
 let mobileNav = document.querySelector('.mobile-nav');
 mobileButton.addEventListener('click', function() {
-  if(mobileButton.classList.contains('active') === true) {
-    mobileButton.classList.remove('active');
+  if(mobileButton.classList.contains('mobile-active') === true) {
+    mobileButton.classList.remove('mobile-active');
     mobileNav.style.display = 'none';
   } else {
-    mobileButton.classList.add('active');
+    mobileButton.classList.add('mobile-active');
     mobileNav.style.display = 'block';
   }
 });
-
-  spyScrolling()
