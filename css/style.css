@@ -253,7 +253,7 @@ textarea {
     nav {
         background-color: aquamarine;
         padding: 1.5rem;
-        position: sticky;
+        position: fixed;
         top: 0;
     }
 
