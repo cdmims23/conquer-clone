@@ -3,44 +3,52 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conquer Clone</title>
+    <script src="https://kit.fontawesome.com/eeb4f0a461.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class="container">
+        <div class="nav-container">
+            <button class="mobile-button">
+                    <i class="fas fa-bars"></i>
+            </button>
+
             <div class="mobile-nav">
-                <button class="mobile-button">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <ul class="mobile-nav-list">
+                    <li><a class="mobile-nav-link" href="#section-one">Home Page</a></li>
+                    <li><a class="mobile-nav-link" href="#section-two">About Us</a></li>
+                    <li><a class="mobile-nav-link" href="#section-three">Services</a></li>
+                    <li><a class="mobile-nav-link" href="#section-four">Contact</a></li>
+                    <li><a class="mobile-nav-link" href="#">External</a></li>
+                </ul>
             </div>
             <div class="single-page-nav">
-                <ul>
-                    <li><a href="#section-one">Home Page</a></li>
-                    <li><a href="#section-two">About Us</a></li>
-                    <li><a href="#section-three">Services</a></li>
-                    <li><a href="#section-four">Contact</a></li>
-                    <li><a>External</a></li>
+                <ul class="nav-list">
+                    <li><a class="nav-link active" href="#section-one">Home Page</a></li>
+                    <li><a class="nav-link" href="#section-two">About Us</a></li>
+                    <li><a class="nav-link" href="#section-three">Services</a></li>
+                    <li><a class="nav-link" href="#section-four">Contact</a></li>
+                    <li><a class="nav-link" href="#">External</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
 <!--Header Area Beginning-->
-    <div id="section-one">
+    <div id="section-one" class="section">
         <header id="main-header">
             <div>
-                <h1>Conquer</h1>
-                <h4>My Clone of The Template</h4>
+                <h1 id="header-intro">Conquer</h1>
+                <h4 id="header-tagline">My Clone of The Template</h4>
             </div>
         </header>
     </div>
 <!--Header Area Ending-->
 
-    <div id="section-two">
+    <div id="section-two" class="section">
         <!--Feature Section Beginning-->
         <section id="features">
             <div id="card1" class="card">
@@ -49,7 +57,7 @@
                 </div>
 
                 <div class="card-info">
-                    <h2>Bootstrap v3.3.6</h2>
+                    <h6>Bootstrap v3.3.6</h6>
                     <p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. 
                         Sed convallis at risus ullamcorper auctor. 
                         Praesent quis velit neque. 
@@ -57,7 +65,7 @@
                         Duis lectus magna, ornare ac scelerisque.
                     </p>
                 </div>
-                <button></button>
+                <button class="read">Read More</button>
             </div>
 
             <div id="card2" class="card">
@@ -66,7 +74,7 @@
                 </div>
 
                 <div class="card-info">
-                    <h2>Responsive Design</h2>
+                    <h6>Responsive Design</h6>
                     <p>
                         Conquer Template is provided by templatemo for free of charge. 
                         You can use this template for any kind of website. 
@@ -74,7 +82,7 @@
                         Thank you for visiting our website. Please come again!
                     </p>
                 </div>
-                <button></button>
+                <button class="read">Read More</button>
             </div>
 
             <div id="card3" class="card">
@@ -83,7 +91,7 @@
                 </div>
 
                 <div class="card-info">
-                    <h2>Parallax Layout</h2>
+                    <h6>Parallax Layout</h6>
                     <p>
                             Morbi sagittis justo a velit placerat ullamcorper quis quis velit. 
                             Sed convallis at risus ullamcorper auctor. 
@@ -92,7 +100,7 @@
                             Duis lectus magna, ornare ac scelerisque. 
                     </p>
                 </div>
-                <button></button>
+                <button class="read">Read More</button>
             </div>
         </section>
         <!--Feature Section Ending-->
@@ -105,7 +113,7 @@
                 </div>
     
                 <div class="entry-info">
-                    <h2>Two Column Left Side</h2>
+                    <h4>Two Column Left Side</h4>
                     <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Nam tempor eros eget eros maximus, ut cursus sem euismod. 
@@ -129,7 +137,7 @@
                 </div>
         
                 <div class="entry-info">
-                    <h2>Two Column Right Side</h2>
+                    <h4>Two Column Right Side</h4>
                     <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Nam tempor eros eget eros maximus, ut cursus sem euismod. 
@@ -150,10 +158,10 @@
         <!--Blog Section Ending-->
     </div>
 
-    <div id="section-three">
+    <div id="section-three" class="section">
         <section id="services">
-            <h2>Our Services</h2>
-            <p>
+            <h2 id="services-heading">Our Services</h2>
+            <p id="services-tagline">
                     Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id 
                     felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. 
                     Etiam a mi quis arcu varius condimentum.
@@ -167,7 +175,7 @@
                 </div>
 
                 <div testimonial-info>
-                    <h2>Column One</h2>
+                    <h6>Column One</h6>
 
                     <p>
                             Ut ac odio scelerisque ante ornare commodo. 
@@ -183,7 +191,7 @@
                     </div>
     
                     <div testimonial-info>
-                        <h2>Column Two</h2>
+                        <h6>Column Two</h6>
     
                         <p>
                             Ut ac odio scelerisque ante ornare commodo. 
@@ -199,7 +207,7 @@
                     </div>
     
                     <div testimonial-info>
-                        <h2>Column Three</h2>
+                        <h6>Column Three</h6>
     
                         <p>
                             Ut ac odio scelerisque ante ornare commodo. 
@@ -215,7 +223,7 @@
                     </div>
     
                     <div testimonial-info>
-                        <h2>Column Four</h2>
+                        <h6>Column Four</h6>
     
                         <p>
                             Ut ac odio scelerisque ante ornare commodo. 
@@ -257,33 +265,32 @@
                                 Quisque semper porta nisi vitae suscipit. 
                                 Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.
                         </p>
-                        <button>Read More</button>
+                        <button class="read">Read More</button>
                     </div>
             </div>
         </section>
     </div>
 
-    <div id="section-four">
+    <div id="section-four" class="section">
         <section id="contact-area">
             <div class="container">
-                <h1>Contact Us</h1>
-                <p></p>
+                <h1 id="contact-heading">Contact Us</h1>
             </div>
 
             <div class="container">
-                <form>
-                    <div>
-                        <input>
-                        <input>
-                        <input>
+                <form id="personal-form">
+                    <div id="personal-info">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
                     </div>
 
-                    <div>
+                    <div id="submit-area">
                         <textarea>
 
                         </textarea>
 
-                        <button></button>
+                        <button id="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -313,7 +320,6 @@
                 </div>
             </div>
     </footer>
-
-    <button></button>
+    <script src="js/conquer.js"></script>
 </body>
 </html>

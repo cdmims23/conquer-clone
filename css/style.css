@@ -1,3 +1,5 @@
+/*Universal Styling*/
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +15,45 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.22rem;
+}
+
+.read {
+    padding: 10px 15px;
+    background-color: aquamarine;
+    color: #fff;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+}
+
+.read:hover {
+    color: aquamarine;
+    border: 1px solid aquamarine;
+    background-color: #fff;
+    transition: ease 0.7s;
+}
+
 /*Nav Styles*/
 
 nav {
@@ -23,7 +64,21 @@ nav {
 }
 
 .mobile-button {
+    padding: 10px 15px;
+    background-color: aquamarine;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
     display: none;
+}
+
+.mobile-button:hover {
+    color: aquamarine;
+    background-color: #fff;
+    transition: ease 0.7s;
 }
 
 .single-page-nav ul{
@@ -35,20 +90,56 @@ nav {
     margin: 0 auto;
 }
 
-.single-page-nav ul li {
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile-nav-link {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: ease 0.7s;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+    background-color: #fff;
+}
+
+.active {
+    color: aquamarine;
+    background-color: #fff;
 }
 
 /*Header*/
-#section-one {
-
-}
 
 #main-header {
     height: 100vh;
     width: 100%;
     background: url(../img/mountain-landscape-2031539_1920.jpg);
     background-size: cover;
-    padding: 2rem;
+    background-attachment: fixed;
+    padding: 20%;
+}
+
+#header-intro, #header-tagline {
+    text-align: center;
+    color: #fff;
 }
 
 /*Section Two*/
@@ -75,12 +166,18 @@ nav {
     width: 100%;
 }
 
+#services-heading, #services-tagline {
+    color: #fff;
+    text-align: center;
+}
+
 #services {
     width: 100%;
     height: 20rem;
     padding: 5%;
     background: url(../img/city-2278497_1920.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #testimonials {
@@ -99,9 +196,93 @@ nav {
 
 /* Section Four*/
 
+#contact-heading{
+    color: #fff;
+}
+
 #contact-area {
     height: 100vh;
     padding: 5%;
     background: url('../img/maldives-3220702_1920.jpg');
     background-size: cover;
+    background-attachment: fixed;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease 0.75s;
+}
+
+
+/*Media Quiries*/
+
+@media only screen and (max-width: 780px) {
+
+    .single-page-nav {
+        display: none;
+    }
+
+    .mobile-button{
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 20px;
+    }
 }
